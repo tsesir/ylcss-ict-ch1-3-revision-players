@@ -41,6 +41,8 @@ var playBtn;
 var pauseBtn;
 var stagePlayBtn;
 var stageReplayBtn;
+var stagePauseHint;
+var stageGesturePaused = false;
 var statusEl;
 var speedSlider;
 var speedReadout;
@@ -302,6 +304,81 @@ function syncTransportOverlays(playing, t, dur) {
   var showPlay = !playing && atStart && !showReplay;
   stagePlayBtn.hidden = !showPlay;
   stageReplayBtn.hidden = !showReplay;
+  if (playing || showPlay || showReplay) stageGesturePaused = false;
+  if (stagePauseHint) stagePauseHint.hidden = !stageGesturePaused;
+  if (stage) stage.classList.toggle("is-stage-toggle", !!(playing || (!atStart && !atEnd)));
+}
+
+function stageTapIntent(input) {
+  if (!input || input.onControl || input.scrubbing || input.moved) return "ignore";
+  if (input.playing) return "pause";
+  if (input.atStart || input.atEnd) return "ignore";
+  return "resume";
+}
+
+function stageControlTarget(node) {
+  var el = node && node.nodeType === 3 ? node.parentElement : node;
+  return !!(el && el.closest && el.closest("button, a, input, textarea, select, label"));
+}
+
+function applyStageTap(intent) {
+  if (intent === "pause") {
+    pause();
+    if (!master) return;
+    var t = master.time();
+    var dur = master.duration() || 0;
+    if (t <= 0.05 || (dur > 0 && t >= dur - 0.05)) return;
+    stageGesturePaused = true;
+    if (stagePauseHint) stagePauseHint.hidden = false;
+    return;
+  }
+  if (intent === "resume") play();
+}
+
+function bindStageTap() {
+  if (!stage) return;
+  var armed = null;
+  var suppressMouseUntil = 0;
+  var slop = 24;
+
+  stage.addEventListener("pointerdown", function (event) {
+    if (event.isPrimary === false) return;
+    if (event.pointerType === "mouse" && (event.button !== 0 || Date.now() < suppressMouseUntil)) return;
+    if (event.pointerType === "touch") suppressMouseUntil = Date.now() + 800;
+    if (scrubbing || stageControlTarget(event.target)) {
+      armed = null;
+      return;
+    }
+    armed = { id: event.pointerId, x: event.clientX, y: event.clientY };
+  }, true);
+
+  // Capture runs before the scrubber pointerup clears `scrubbing`.
+  // A touch tap also emits compatibility mouse events; ignore those so one tap toggles once.
+  window.addEventListener("pointerup", function (event) {
+    if (!armed || event.pointerId !== armed.id) return;
+    var start = armed;
+    armed = null;
+    if (event.pointerType === "touch") suppressMouseUntil = Date.now() + 800;
+    if (event.pointerType === "mouse" && Date.now() < suppressMouseUntil) return;
+    if (event.target !== stage && !stage.contains(event.target)) return;
+    if (!master) return;
+    var dx = event.clientX - start.x;
+    var dy = event.clientY - start.y;
+    var t = master.time();
+    var dur = master.duration() || 0;
+    applyStageTap(stageTapIntent({
+      playing: !!(master.isActive() && t < dur - 0.02),
+      atStart: t <= 0.05,
+      atEnd: dur > 0 && t >= dur - 0.05,
+      onControl: stageControlTarget(event.target),
+      scrubbing: scrubbing,
+      moved: dx * dx + dy * dy > slop * slop
+    }));
+  }, true);
+
+  window.addEventListener("pointercancel", function (event) {
+    if (armed && event.pointerId === armed.id) armed = null;
+  }, true);
 }
 
 function parkTime(audio, seconds) {
@@ -724,6 +801,7 @@ function bind() {
       prev();
     }
   });
+  bindStageTap();
 }
 
 function expose() {
@@ -771,6 +849,7 @@ function cacheDom() {
   pauseBtn = document.getElementById("pauseBtn");
   stagePlayBtn = document.getElementById("stagePlay");
   stageReplayBtn = document.getElementById("stageReplay");
+  stagePauseHint = document.getElementById("stagePauseHint");
   statusEl = document.getElementById("status");
   speedSlider = document.getElementById("speedSlider");
   speedReadout = document.getElementById("speedReadout");
