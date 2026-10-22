@@ -52,7 +52,7 @@ Notion 用 `/embed` 貼章節網址。根目錄同每章都有 `_headers`（`fra
 - `audio/manifest.json` 列出 `lang`、`beat`、`duration_s`
 - 粵語／普通話：英文片段前後 EN pad **0.1 秒**，已寫入 mp3
 
-聲軌與分鏡提交見本檔變更紀錄（CHANGELOG 0.2.0）。
+聲軌與分鏡提交：[`c773315`](https://github.com/tsesir/ylcss-ict-ch1-3-revision-players/commit/c773315018df37a8d0781360f4b52a8af8da1a84)。
 
 ## 本機預覽
 
