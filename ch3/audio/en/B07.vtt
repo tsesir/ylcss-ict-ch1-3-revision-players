@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.023
+In unsigned integers, every bit represents magnitude.
+
+00:00:04.023 --> 00:00:05.769
+There are no negatives.
+
+00:00:05.769 --> 00:00:09.716
+Eight-bit range: zero to two hundred and fifty-five.
+
+00:00:09.716 --> 00:00:13.056
+For n bits: zero to two to the n, minus one.

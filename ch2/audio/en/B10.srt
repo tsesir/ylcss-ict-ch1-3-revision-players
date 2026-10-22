@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,554
+Fixed value check: data must belong to a predefined list — gender only male or female.
+
+2
+00:00:05,554 --> 00:00:10,720
+Format check: the pattern must follow a rule — an email must contain an at sign.
+
+3
+00:00:10,720 --> 00:00:15,240
+Type check: the data type must be correct — age accepts integers only.
+

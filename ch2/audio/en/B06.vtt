@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.819
+Validation happens before data is received or processed.
+
+00:00:03.819 --> 00:00:08.388
+Its aim: is the input reasonable, logical, and within preset rules?
+
+00:00:08.388 --> 00:00:11.593
+Its limit: legal but false data can still pass.
+
+00:00:11.593 --> 00:00:15.480
+A fake phone number in a valid format still gets through.

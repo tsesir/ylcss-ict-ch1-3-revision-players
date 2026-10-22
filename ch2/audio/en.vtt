@@ -1,0 +1,190 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.093
+Today we revise Chapter Two.
+
+00:00:02.093 --> 00:00:04.784
+Data organisation, and data control.
+
+00:00:04.784 --> 00:00:09.792
+How to reduce input errors, and how data is organised and accessed.
+
+00:00:10.142 --> 00:00:12.073
+Remember four threads.
+
+00:00:12.073 --> 00:00:15.058
+G I G O — guard against bad input.
+
+00:00:15.058 --> 00:00:17.780
+Validation versus verification.
+
+00:00:17.780 --> 00:00:19.974
+Common validation checks.
+
+00:00:19.974 --> 00:00:23.486
+Data hierarchy, and file access methods.
+
+00:00:23.836 --> 00:00:26.097
+Exam warning: stop G I G O.
+
+00:00:26.097 --> 00:00:28.107
+Garbage-In, Garbage-Out.
+
+00:00:28.107 --> 00:00:31.876
+Useless input always produces useless output.
+
+00:00:32.226 --> 00:00:36.045
+Manual entry always risks human error — three main types.
+
+00:00:36.045 --> 00:00:40.400
+First, data source error: the source person fills in wrong facts.
+
+00:00:40.400 --> 00:00:46.228
+Second, transcription error: misread or mistype — for example one and L, or zero and O.
+
+00:00:46.228 --> 00:00:52.794
+Third, transposition error: neighbouring characters swap — for example sixteen typed as sixty-one.
+
+00:00:53.144 --> 00:00:55.778
+Both fight errors, but do not confuse them.
+
+00:00:55.778 --> 00:01:00.372
+Validation checks whether data is reasonable, before the system accepts it.
+
+00:01:00.372 --> 00:01:06.008
+Verification checks whether keyed data matches the original source, after entry is finished.
+
+00:01:06.358 --> 00:01:10.177
+Validation happens before data is received or processed.
+
+00:01:10.177 --> 00:01:14.746
+Its aim: is the input reasonable, logical, and within preset rules?
+
+00:01:14.746 --> 00:01:17.951
+Its limit: legal but false data can still pass.
+
+00:01:17.951 --> 00:01:21.838
+A fake phone number in a valid format still gets through.
+
+00:01:22.188 --> 00:01:25.476
+Verification happens after data entry is complete.
+
+00:01:25.476 --> 00:01:30.540
+Its aim: confirm the keyed data matches the original source document exactly.
+
+00:01:30.540 --> 00:01:31.790
+Two common methods.
+
+00:01:31.790 --> 00:01:36.328
+Input data twice — for example type a new password twice and compare.
+
+00:01:36.328 --> 00:01:42.444
+Double data entry: two operators key the same data independently, then the computer compares.
+
+00:01:42.794 --> 00:01:45.688
+The following are validation-check examples.
+
+00:01:45.688 --> 00:01:47.333
+Remember: parity checking
+
+00:01:47.333 --> 00:01:49.899
+detects transmission or storage errors.
+
+00:01:49.899 --> 00:01:53.714
+It is not a validation check, and it is not a check digit.
+
+00:01:54.064 --> 00:01:57.144
+Presence check: a required field must not be empty.
+
+00:01:57.144 --> 00:02:03.665
+Field length check: limit character or digit length — a Hong Kong phone number must be exactly eight digits.
+
+00:02:03.665 --> 00:02:11.032
+Range check: a value must lie between a set lower and upper bound — scores zero to one hundred; birth month one to twelve.
+
+00:02:11.382 --> 00:02:16.936
+Fixed value check: data must belong to a predefined list — gender only male or female.
+
+00:02:16.936 --> 00:02:22.102
+Format check: the pattern must follow a rule — an email must contain an at sign.
+
+00:02:22.102 --> 00:02:26.622
+Type check: the data type must be correct — age accepts integers only.
+
+00:02:26.972 --> 00:02:30.714
+A check digit uses a maths algorithm, often with weights,
+
+00:02:30.714 --> 00:02:34.390
+to compute a trailing check character for self-checking.
+
+00:02:34.390 --> 00:02:39.511
+Examples: the digit in brackets on a Hong Kong ID card, I S B N, and barcodes.
+
+00:02:39.511 --> 00:02:42.596
+Remember: this does not include the parity bit.
+
+00:02:42.946 --> 00:02:46.048
+E D B data hierarchy, from small to large.
+
+00:02:46.048 --> 00:02:49.223
+Data: the underlying binary bits and bytes.
+
+00:02:49.223 --> 00:02:52.398
+A field: the smallest unit a user accesses.
+
+00:02:52.398 --> 00:02:56.386
+A record: the related fields that describe one entity.
+
+00:02:56.386 --> 00:03:01.186
+A file, or table: a set of records that share the same structure.
+
+00:03:01.186 --> 00:03:05.026
+A database: a collection of related files or tables.
+
+00:03:05.376 --> 00:03:08.465
+E D B lists only two file-access methods.
+
+00:03:08.465 --> 00:03:10.349
+First, sequential access.
+
+00:03:10.349 --> 00:03:12.610
+Typical medium: magnetic tape.
+
+00:03:12.610 --> 00:03:18.638
+You must read from start to end in order; seek time is long and hard to predict.
+
+00:03:18.638 --> 00:03:22.104
+Common for batch processing or offline backup.
+
+00:03:22.454 --> 00:03:23.909
+Second, direct access.
+
+00:03:23.909 --> 00:03:27.743
+Typical media: hard disk, optical disc, solid-state drive.
+
+00:03:27.743 --> 00:03:31.115
+You can locate a record directly by address or key.
+
+00:03:31.115 --> 00:03:35.744
+Seek time is shorter and more predictable; good for real-time queries.
+
+00:03:35.744 --> 00:03:41.562
+At the course file-access level, so-called random access still counts as direct access —
+
+00:03:41.562 --> 00:03:46.190
+do not confuse that with device-level random versus sequential traits.
+
+00:03:46.540 --> 00:03:47.945
+Remember four points.
+
+00:03:47.945 --> 00:03:52.494
+G I G O: garbage in, garbage out — know the three human-error types.
+
+00:03:52.494 --> 00:03:58.380
+Validation checks reasonableness; verification matches the source — do not confuse them.
+
+00:03:58.380 --> 00:04:03.464
+Know the seven common validation checks; parity checking is not one of them.
+
+00:04:03.464 --> 00:04:08.548
+Five levels in the data hierarchy; file access is only sequential or direct.

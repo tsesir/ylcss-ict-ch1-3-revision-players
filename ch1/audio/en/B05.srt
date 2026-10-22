@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:02,072
+Five common data types:
+
+2
+00:00:02,072 --> 00:00:05,496
+text, number, image, audio, and video.
+

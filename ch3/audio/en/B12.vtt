@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.745
+Start character encoding with A S C I I.
+
+00:00:02.745 --> 00:00:07.892
+One byte, practically seven bits — one hundred and twenty-eight characters.
+
+00:00:07.892 --> 00:00:11.529
+Letters, digits, punctuation, and control characters.
+
+00:00:11.529 --> 00:00:17.568
+The leftmost bit is padded with zero into one byte; it is the base of Western encodings.

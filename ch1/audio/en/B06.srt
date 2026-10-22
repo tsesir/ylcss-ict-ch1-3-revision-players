@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:03,827
+Information is processed, computed, and structured data
+
+2
+00:00:03,827 --> 00:00:07,237
+that carries specific meaning and aids decisions.
+
+3
+00:00:07,237 --> 00:00:10,438
+It has context, relevance, and decision value.
+
+4
+00:00:10,438 --> 00:00:15,240
+Examples: class average scores, promotion lists, sales trend reports.
+

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0 — 2026-10-22
+
+- 接上已核准的 Ch1–Ch3 TTS。每章 15 節：Ch1 205.9 秒、Ch2 272.0 秒、Ch3 366.0 秒（`js/beats.js` 的 `duration_s` 合計）。
+- 以 pack 的 `audio/` 取代占位資料夾。粵語、普通話、English 各有 `B01.mp3`–`B15.mp3`。
+- 由 `beats.json` 重寫 `js/beats.js`。全域名稱仍是 `CH4_BEATS`，`player.js` 不用改。
+- 由各節 `.vtt` 重寫 `js/cues.js`（粵／普／英），並寫入 `CH4_AUDIO_DURATIONS`。
+- `js/scenes.js` 改為逐節獨立舞台，清走 scaffold 占位卡。
+- 章名改為第1章 資訊處理概論、第2章 數據組織及數據控制、第3章 數據表示。
+- 粵語／普通話 mp3 已包含英文片段前後各 0.1 秒的 EN pad，沒有再轉碼。
+- 播放／重播、控制列、全螢幕包含、速度、旁白停頓、字幕大小，以及 `ch1-`／`ch2-`／`ch3-` localStorage 鍵維持不變。
+
 ## 0.1.0 — 2026-10-22
 
 - 新增 `ch1/`、`ch2/`、`ch3/` 三個自包含純播放器，外殼對齊 Ch4 正式根目錄：收合頂欄、全螢幕 contain（`min(slotW/1280, slotH/720)` 同 `.is-fs-fallback`）、0.5x–2.0x、旁白停頓、粵／普／英、字幕小／中／大、舞台中央播放與重播。

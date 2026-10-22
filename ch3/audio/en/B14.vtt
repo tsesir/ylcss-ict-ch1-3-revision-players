@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.105
+Unicode — commonly stored as U T F eight.
+
+00:00:03.105 --> 00:00:09.390
+Variable length, one to four bytes; covers the world’s scripts, symbols, and emoji.
+
+00:00:09.390 --> 00:00:16.811
+Backward compatible with A S C I I: A S C I I characters take one byte; Chinese often takes three.
+
+00:00:16.811 --> 00:00:19.992
+It is also a common H T M L five standard.

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:01,940
+There are six main functions:
+
+2
+00:00:01,940 --> 00:00:04,348
+planning, forecasting, coordinating,
+
+3
+00:00:04,348 --> 00:00:08,160
+controlling, operational activities, and decision making.
+

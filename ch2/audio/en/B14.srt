@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:01,455
+Second, direct access.
+
+2
+00:00:01,455 --> 00:00:05,289
+Typical media: hard disk, optical disc, solid-state drive.
+
+3
+00:00:05,289 --> 00:00:08,661
+You can locate a record directly by address or key.
+
+4
+00:00:08,661 --> 00:00:13,290
+Seek time is shorter and more predictable; good for real-time queries.
+
+5
+00:00:13,290 --> 00:00:19,108
+At the course file-access level, so-called random access still counts as direct access —
+
+6
+00:00:19,108 --> 00:00:23,736
+do not confuse that with device-level random versus sequential traits.
+

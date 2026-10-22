@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,102
+E D B data hierarchy, from small to large.
+
+2
+00:00:03,102 --> 00:00:06,277
+Data: the underlying binary bits and bytes.
+
+3
+00:00:06,277 --> 00:00:09,452
+A field: the smallest unit a user accesses.
+
+4
+00:00:09,452 --> 00:00:13,440
+A record: the related fields that describe one entity.
+
+5
+00:00:13,440 --> 00:00:18,240
+A file, or table: a set of records that share the same structure.
+
+6
+00:00:18,240 --> 00:00:22,080
+A database: a collection of related files or tables.
+

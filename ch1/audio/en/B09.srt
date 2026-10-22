@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:02,514
+System functions state the purpose:
+
+2
+00:00:02,514 --> 00:00:06,463
+automate procedures, improve a system, or fix problems.
+
+3
+00:00:06,463 --> 00:00:10,198
+Example: turning manual checkout into self-checkout.
+
+4
+00:00:10,198 --> 00:00:14,507
+Data is the core asset, stored in a database for processing.
+
+5
+00:00:14,507 --> 00:00:18,600
+Examples: prices, stock levels, payroll, medical records.
+

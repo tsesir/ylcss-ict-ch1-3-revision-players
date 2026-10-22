@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:03,089
+E D B lists only two file-access methods.
+
+2
+00:00:03,089 --> 00:00:04,973
+First, sequential access.
+
+3
+00:00:04,973 --> 00:00:07,234
+Typical medium: magnetic tape.
+
+4
+00:00:07,234 --> 00:00:13,262
+You must read from start to end in order; seek time is long and hard to predict.
+
+5
+00:00:13,262 --> 00:00:16,728
+Common for batch processing or offline backup.
+

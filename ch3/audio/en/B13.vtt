@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.438
+Big Five: one to two bytes; traditional Chinese common characters, and it includes A S C I I.
+
+00:00:06.438 --> 00:00:12.531
+A regional traditional encoding; no simplified Chinese; cross-region mojibake is common.
+
+00:00:12.531 --> 00:00:15.231
+G B code centres on simplified Chinese.
+
+00:00:15.231 --> 00:00:23.538
+G B two three one two is mainly simplified; G B K and G B one eight zero three zero are extensions with more characters.
+
+00:00:23.538 --> 00:00:30.600
+Do not claim every G B variant excludes traditional; traditional Chinese still commonly uses Big Five.

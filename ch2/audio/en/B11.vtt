@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.742
+A check digit uses a maths algorithm, often with weights,
+
+00:00:03.742 --> 00:00:07.418
+to compute a trailing check character for self-checking.
+
+00:00:07.418 --> 00:00:12.539
+Examples: the digit in brackets on a Hong Kong ID card, I S B N, and barcodes.
+
+00:00:12.539 --> 00:00:15.624
+Remember: this does not include the parity bit.

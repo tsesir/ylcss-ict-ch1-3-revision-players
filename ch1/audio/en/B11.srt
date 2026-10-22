@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:02,025
+Personnel fall into two groups:
+
+2
+00:00:02,025 --> 00:00:05,357
+end users — for example customers and accountants —
+
+3
+00:00:05,357 --> 00:00:06,925
+and I C T professionals.
+
+4
+00:00:06,925 --> 00:00:10,322
+Professionals include systems analysts, programmers,
+
+5
+00:00:10,322 --> 00:00:14,568
+network administrators, database administrators, and technicians.
+

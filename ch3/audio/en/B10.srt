@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:04,837
+To get the eight-bit two's complement of a negative integer, three steps.
+
+2
+00:00:04,837 --> 00:00:08,481
+One: write the binary of the matching positive integer.
+
+3
+00:00:08,481 --> 00:00:11,993
+Two: invert every bit — that is the ones' complement.
+
+4
+00:00:11,993 --> 00:00:15,041
+Three: add one — that yields two's complement.
+
+5
+00:00:15,041 --> 00:00:24,384
+Example, minus twenty-nine: twenty-nine is zero zero zero one one one zero one; invert and add one to get one one one zero zero zero one one.
+

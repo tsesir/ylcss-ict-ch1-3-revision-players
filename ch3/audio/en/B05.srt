@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:02,318
+Remember the storage unit scale.
+
+2
+00:00:02,318 --> 00:00:04,274
+One byte equals eight bits.
+
+3
+00:00:04,274 --> 00:00:09,127
+One K B equals one thousand and twenty-four bytes — two to the ten.
+
+4
+00:00:09,127 --> 00:00:14,053
+One M B equals one thousand and twenty-four K B — two to the twenty.
+
+5
+00:00:14,053 --> 00:00:18,979
+One G B equals one thousand and twenty-four M B — two to the thirty.
+
+6
+00:00:18,979 --> 00:00:23,832
+One T B equals one thousand and twenty-four G B — two to the forty.
+

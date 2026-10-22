@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:02,093
+Today we revise Chapter Two.
+
+2
+00:00:02,093 --> 00:00:04,784
+Data organisation, and data control.
+
+3
+00:00:04,784 --> 00:00:09,792
+How to reduce input errors, and how data is organised and accessed.
+

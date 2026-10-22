@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:03,288
+Verification happens after data entry is complete.
+
+2
+00:00:03,288 --> 00:00:08,352
+Its aim: confirm the keyed data matches the original source document exactly.
+
+3
+00:00:08,352 --> 00:00:09,602
+Two common methods.
+
+4
+00:00:09,602 --> 00:00:14,140
+Input data twice — for example type a new password twice and compare.
+
+5
+00:00:14,140 --> 00:00:20,256
+Double data entry: two operators key the same data independently, then the computer compares.
+

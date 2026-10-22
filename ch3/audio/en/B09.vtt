@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.077
+Two's complement.
+
+00:00:01.077 --> 00:00:05.702
+The most significant bit is likewise zero for positive, one for negative.
+
+00:00:05.702 --> 00:00:08.870
+But there is a unique zero — all zeros means zero.
+
+00:00:08.870 --> 00:00:14.509
+Eight-bit range: minus one hundred and twenty-eight to plus one hundred and twenty-seven.
+
+00:00:14.509 --> 00:00:19.008
+Compared with sign-and-magnitude, the negative end has one extra value.

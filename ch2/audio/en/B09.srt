@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:03,080
+Presence check: a required field must not be empty.
+
+2
+00:00:03,080 --> 00:00:09,601
+Field length check: limit character or digit length — a Hong Kong phone number must be exactly eight digits.
+
+3
+00:00:09,601 --> 00:00:16,968
+Range check: a value must lie between a set lower and upper bound — scores zero to one hundred; birth month one to twelve.
+

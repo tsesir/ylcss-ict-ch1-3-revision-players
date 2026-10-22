@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:01,849
+Fifth, data processing.
+
+2
+00:00:01,849 --> 00:00:03,860
+Sixth, data transmission.
+
+3
+00:00:03,860 --> 00:00:06,031
+Seventh, data presentation.
+
+4
+00:00:06,031 --> 00:00:11,016
+Together, these seven form the full information process chain.
+

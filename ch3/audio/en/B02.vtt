@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.784
+Three main lines in this chapter.
+
+00:00:02.784 --> 00:00:05.146
+One: number-base conversion.
+
+00:00:05.146 --> 00:00:07.593
+Two: integer representations.
+
+00:00:07.593 --> 00:00:09.787
+Three: character encoding.
+
+00:00:09.787 --> 00:00:13.752
+Remember: everything ends up as zeros and ones.

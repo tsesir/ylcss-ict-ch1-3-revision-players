@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.405
+Remember four points.
+
+00:00:01.405 --> 00:00:05.954
+G I G O: garbage in, garbage out — know the three human-error types.
+
+00:00:05.954 --> 00:00:11.840
+Validation checks reasonableness; verification matches the source — do not confuse them.
+
+00:00:11.840 --> 00:00:16.924
+Know the seven common validation checks; parity checking is not one of them.
+
+00:00:16.924 --> 00:00:22.008
+Five levels in the data hierarchy; file access is only sequential or direct.

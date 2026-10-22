@@ -1143,3 +1143,164 @@ html.fs-lock body {
 .transport-overlay[hidden] {
   display: none !important;
 }
+
+/* Beat stages. Scoped under .scene so dock, fullscreen, speed, wait, and subtitle chrome stay as they are. */
+.scene .board {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  min-height: 0;
+}
+.scene .anchor { margin: 0; }
+.scene .tile-grid { display: grid; gap: 10px; }
+.scene .tile-grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.scene .tile-grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.scene .tile-grid.cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.scene .tile-grid.cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.scene .tile-grid.cols-7 { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.scene .tile {
+  background: var(--card);
+  border: 3px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 4px 4px 0 var(--ink);
+  padding: 10px 8px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.scene .tile small { display: block; margin-top: 4px; font-size: 16px; font-weight: 800; }
+.scene .tile-grid.cols-7 .tile { font-size: 16px; padding: 8px 4px; }
+.scene .tile-grid.cols-5 .tile { font-size: 18px; }
+.scene .tile.bad { color: var(--red); border-color: var(--red); background: #fff; }
+.scene .tile.good { background: var(--mint); }
+.scene .tile.dim { opacity: 0.55; }
+.scene .icon-card { height: auto; min-height: 112px; font-size: 22px; padding: 8px; }
+.scene .slot-rail { display: flex; gap: 8px; }
+.scene .slot {
+  flex: 1;
+  min-width: 0;
+  min-height: 92px;
+  border: 3px dashed rgba(20, 20, 20, 0.55);
+  border-radius: 14px;
+  background: rgba(255, 254, 251, 0.82);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 6px 4px;
+}
+.scene .slot.on { background: var(--lime); border-style: solid; border-color: var(--ink); }
+.scene .slot b { font-size: 22px; }
+.scene .eq-hero {
+  margin: 12px 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+.scene .token-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.scene .token {
+  display: inline-grid;
+  place-items: center;
+  min-width: 72px;
+  height: 72px;
+  padding: 0 10px;
+  background: var(--blue);
+  border: 3px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 4px 4px 0 var(--ink);
+  font-weight: 900;
+  font-size: 26px;
+}
+.scene .pipe { display: flex; align-items: center; gap: 8px; }
+.scene .pipe .tile { flex: 1; }
+.scene .arrow { font-weight: 900; font-size: 28px; }
+.scene .inkbox {
+  background: var(--ink);
+  color: var(--lime);
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-weight: 900;
+  text-align: center;
+}
+.scene .chapter-badge { align-self: center; font-size: 22px; }
+.scene .warn {
+  background: #fff;
+  color: var(--red);
+  border: 3px solid var(--red);
+  border-radius: 12px;
+  font-weight: 900;
+  padding: 8px 12px;
+  text-align: center;
+}
+.scene svg.diagram { width: 100%; height: 220px; display: block; }
+.scene svg.diagram text { font-family: inherit; }
+.scene svg.chain-svg { height: 36px; }
+.scene .pyramid { display: flex; flex-direction: column-reverse; align-items: center; gap: 6px; }
+.scene .layer {
+  border: 3px solid var(--ink);
+  background: var(--card);
+  box-shadow: 3px 3px 0 var(--ink);
+  border-radius: 12px;
+  font-weight: 900;
+  text-align: center;
+  padding: 6px 8px;
+}
+.scene .ladder-units { display: flex; flex-direction: column-reverse; gap: 6px; }
+.scene .unit-step {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  box-shadow: 3px 3px 0 var(--ink);
+  font-weight: 900;
+  padding: 6px 12px;
+}
+.scene .unit-step .grow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--lime);
+  transform-origin: left center;
+}
+.scene .unit-step span { position: relative; z-index: 1; }
+.scene .ascii-grid { display: grid; grid-template-columns: repeat(16, minmax(0, 1fr)); gap: 3px; }
+.scene .ascii-grid i { display: block; height: 12px; background: var(--blue); border: 1px solid var(--ink); border-radius: 2px; }
+.scene .seek {
+  height: 22px;
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.scene .seek i { display: block; height: 100%; width: 8%; background: var(--red); }
+.scene .seek.short i { background: var(--lime); }
+.scene .col-table { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.scene .col h3 { margin: 0 0 6px; font-size: 26px; }
+.scene .col p { margin: 0; font-weight: 800; }
+.scene .mini-rail { display: flex; gap: 6px; }
+.scene .mini-rail span {
+  flex: 1;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  padding: 4px 2px;
+  background: #fff;
+}
+.scene .mini-rail span.on { background: var(--lime); }
+.scene .stamp { max-width: 980px; text-align: center; }
+.scene .bits { justify-content: center; }

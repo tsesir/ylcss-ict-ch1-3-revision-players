@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.344
+Overflow error: the result falls outside the range that bit width can hold.
+
+00:00:04.344 --> 00:00:10.772
+Two's complement addition rule: if two same-sign numbers add to the opposite sign, overflow must have occurred.
+
+00:00:10.772 --> 00:00:16.853
+Positive plus positive yielding negative — overflow; negative plus negative yielding positive — overflow.
+
+00:00:16.853 --> 00:00:20.328
+One positive and one negative added together never overflow.

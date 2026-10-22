@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:02,634
+Both fight errors, but do not confuse them.
+
+2
+00:00:02,634 --> 00:00:07,228
+Validation checks whether data is reasonable, before the system accepts it.
+
+3
+00:00:07,228 --> 00:00:12,864
+Verification checks whether keyed data matches the original source, after entry is finished.
+

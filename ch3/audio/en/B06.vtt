@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.438
+Integers have three common representations.
+
+00:00:03.438 --> 00:00:04.877
+Unsigned integers.
+
+00:00:04.877 --> 00:00:06.396
+Sign-and-magnitude.
+
+00:00:06.396 --> 00:00:07.756
+Two's complement.
+
+00:00:07.756 --> 00:00:13.992
+Focus on the most significant bit, the M S B, the zero problem, and the range.

@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.177
+Binary to hexadecimal follows the golden rule.
+
+00:00:03.177 --> 00:00:08.563
+From the radix point, or from the rightmost end, group every four binary bits.
+
+00:00:08.563 --> 00:00:12.638
+If a group has fewer than four bits, pad zeros on the left.
+
+00:00:12.638 --> 00:00:17.472
+Map each group to one hexadecimal digit: zero to nine, or A through F.

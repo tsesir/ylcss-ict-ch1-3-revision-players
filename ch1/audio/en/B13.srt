@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:02,451
+First, data collection.
+
+2
+00:00:02,451 --> 00:00:05,221
+Second, data organisation.
+
+3
+00:00:05,221 --> 00:00:07,458
+Third, data analysis.
+
+4
+00:00:07,458 --> 00:00:09,696
+Fourth, data storage.
+

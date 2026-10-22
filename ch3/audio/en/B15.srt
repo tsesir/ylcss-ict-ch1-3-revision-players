@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:01,479
+Remember four points.
+
+2
+00:00:01,479 --> 00:00:08,454
+Do not confuse place value with face value; convert bases with place value and groups of four bits.
+
+3
+00:00:08,454 --> 00:00:17,331
+Sign-and-magnitude has dual zero; two's complement has a unique zero, and eight bits reach minus one hundred and twenty-eight.
+
+4
+00:00:17,331 --> 00:00:20,572
+Same-sign add to opposite sign means overflow.
+
+5
+00:00:20,572 --> 00:00:24,024
+Encodings: A S C I I, Big Five, G B, and Unicode.
+

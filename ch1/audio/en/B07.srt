@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:02,224
+Remember the core formula mindset:
+
+2
+00:00:02,224 --> 00:00:05,232
+information equals data plus processing logic.
+

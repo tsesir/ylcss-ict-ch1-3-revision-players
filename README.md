@@ -1,14 +1,16 @@
 # YLCSS S4 ICT · Ch1–Ch3 純播放溫習動畫
 
-三個自包含靜態播放器。外殼抄自 [Ch4 正式根目錄播放器](https://github.com/tsesir/ylcss-ch4-revision-player)（控制列、全螢幕包含、舞台中央播放／重播）。資料夾分法對齊 [物理科 monorepo](https://github.com/tsesir/ylcss-phys-revision-players)：每一章自己一套 HTML、CSS、JS、GSAP 同空的 `audio/`。
+三個自包含靜態播放器。外殼對齊 [Ch4 正式根目錄播放器](https://github.com/tsesir/ylcss-ch4-revision-player) 的播放合約。資料夾分法對齊 [物理科 monorepo](https://github.com/tsesir/ylcss-phys-revision-players)：每一章自己一套 HTML、CSS、JS、GSAP，以及 `audio/{yue,cmn,en}/`。
 
-**正式分鏡同旁白尚未加入。** 真實場景同 TTS 聲軌要等動畫設計Bot Approve，再出 TTS。而家每章只有約 9–12 節占位卡片／印章，`audio/{yue,cmn,en}/` 係空的。沒有 mp3 時播放器靜音播放，字幕仍跟占位字幕稿，聲線按鈕顯示「無音軌」。
+**TTS 已接上。** 每章 15 節。粵語、普通話、English 都有逐節 mp3 與字幕。粵語／普通話音軌裡，每個英文片段的前後已各加 **0.1 秒** 停頓（EN pad），燒錄在 mp3 內；這次沒有再轉碼。
 
-| 章 | 介面標題 | 路徑 | 占位節數 |
-|----|----------|------|----------|
-| Ch1 | ICT Ch1 溫習動畫（scaffold） | [`ch1/`](ch1/) | 10 |
-| Ch2 | ICT Ch2 溫習動畫（scaffold） | [`ch2/`](ch2/) | 9 |
-| Ch3 | ICT Ch3 溫習動畫（scaffold） | [`ch3/`](ch3/) | 12 |
+| 章 | 介面標題 | 路徑 | 節數 | `beats.js` 總長 |
+|----|----------|------|------|-----------------|
+| Ch1 | 第1章 資訊處理概論 | [`ch1/`](ch1/) | 15 | 205.9 秒 |
+| Ch2 | 第2章 數據組織及數據控制 | [`ch2/`](ch2/) | 15 | 272.0 秒 |
+| Ch3 | 第3章 數據表示 | [`ch3/`](ch3/) | 15 | 366.0 秒 |
+
+總長是各節 `duration_s` 相加，未計播放器的旁白停頓（預設 0.5 秒）。
 
 ## Pages
 
@@ -24,15 +26,15 @@ Notion 用 `/embed` 貼章節網址。根目錄同每章都有 `_headers`（`fra
 ## 播放合約（對齊 Ch4 正式根目錄）
 
 - 純播放，沒有測驗。
-- 聲線：粵語 `yue`、普通話 `cmn`、English `en`。缺 mp3 就靜音，動畫同字幕繼續。
+- 聲線：粵語 `yue`、普通話 `cmn`、English `en`。三條聲線的 `B01.mp3`–`B15.mp3` 都在。缺 mp3 時仍會靜音播放。
 - 速度 0.5x–2.0x，旁白停頓 0–3 秒（預設 0.5 秒）。
-- 字幕開／關，以及小／中／大。預設大。
+- 字幕開／關，以及小／中／大。預設大。字幕由各節 `.vtt` 生成，寫入 `js/cues.js`。
 - 控制列預設收合，由頂欄向下展開，收合時向上縮回。
 - 全螢幕優先用 Fullscreen API。失敗時加 `.is-fs-fallback` 填滿視窗。舞台以 `min(slotW/1280, slotH/720)` 包含縮放，可以大於 1。
 - 未播放時，第一幀中央有「播放」。最後一節完結、暫停在結尾時，中央有「重播」。
 - 舞台 1280×720。`vendor/gsap.min.js` 放喺每章入面，不必靠 CDN。
 
-`js/player.js` 仍讀全域 `CH4_BEATS`／`CH4_CUES`，等之後可以沿用同一套播放程式。呢個名只係程式介面，內容不是第四章。
+`js/player.js` 仍讀全域 `CH4_BEATS`／`CH4_CUES`。呢個名只係程式介面，內容不是第四章。每節有自己的舞台（`js/scenes.js`），跟該節的畫面說明、關鍵詞同卡片。
 
 ## localStorage（每章分開，不會寫入 Ch4 或物理科的鍵）
 
@@ -44,6 +46,14 @@ Notion 用 `/embed` 貼章節網址。根目錄同每章都有 `_headers`（`fra
 
 值：字幕 `s`／`m`／`l`；控制列 `open` 或 `collapsed`。第一次沒有紀錄，控制列係收合。
 
+## 聲軌
+
+- `audio/{yue,cmn,en}/B01.mp3` … `B15.mp3`，同名 `.vtt` 與 `.srt`
+- `audio/manifest.json` 列出 `lang`、`beat`、`duration_s`
+- 粵語／普通話：英文片段前後 EN pad **0.1 秒**，已寫入 mp3
+
+聲軌與分鏡提交見本檔變更紀錄（CHANGELOG 0.2.0）。
+
 ## 本機預覽
 
 ```bash
@@ -52,9 +62,3 @@ cd ch1 && python3 -m http.server 8765
 ```
 
 `ch2/`、`ch3/` 同樣。
-
-## 之後點樣換上正式內容
-
-1. 動畫設計Bot Approve 之後，替換該章 `js/beats.js`、`js/scenes.js`、`js/cues.js`。
-2. 把 `audio/{yue,cmn,en}/Bxx.mp3`（同可選 `.vtt`）放進該章，並在 `audio/manifest.json` 列出 `lang`、`beat`、`duration_s`。
-3. 三條聲線齊全之後，聲線按鈕會由「無音軌」變「已就緒」。

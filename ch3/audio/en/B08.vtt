@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.239
+Sign-and-magnitude: the most significant bit is zero for positive, one for negative; the other bits hold magnitude.
+
+00:00:07.239 --> 00:00:10.450
+The problem is dual zero: plus zero and minus zero.
+
+00:00:10.450 --> 00:00:16.052
+Eight-bit range: minus one hundred and twenty-seven to plus one hundred and twenty-seven.
+
+00:00:16.052 --> 00:00:18.696
+Do not confuse this with two's complement.

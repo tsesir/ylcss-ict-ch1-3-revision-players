@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:01,687
+Remember three points.
+
+2
+00:00:01,687 --> 00:00:06,595
+Data is raw fact; information equals data plus processing logic.
+
+3
+00:00:06,595 --> 00:00:11,963
+Five I S components: purposes, data, processes, technology, personnel.
+
+4
+00:00:11,963 --> 00:00:16,488
+Know the seven processes — from collection to presentation.
+

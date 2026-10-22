@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.894
+The following are validation-check examples.
+
+00:00:02.894 --> 00:00:04.539
+Remember: parity checking
+
+00:00:04.539 --> 00:00:07.105
+detects transmission or storage errors.
+
+00:00:07.105 --> 00:00:10.920
+It is not a validation check, and it is not a check digit.
