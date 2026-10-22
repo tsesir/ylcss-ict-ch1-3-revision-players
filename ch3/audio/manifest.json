@@ -7,13 +7,13 @@
     "path": "audio/yue/B01.mp3",
     "srt": "audio/yue/B01.srt",
     "vtt": "audio/yue/B01.vtt",
-    "duration_s": 11.664,
+    "duration_s": 11.568,
     "chars": 59,
     "cue_count": 3,
-    "bytes": 69284,
+    "bytes": 70916,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "yue",
@@ -39,13 +39,13 @@
     "path": "audio/yue/B03.mp3",
     "srt": "audio/yue/B03.srt",
     "vtt": "audio/yue/B03.vtt",
-    "duration_s": 22.104,
+    "duration_s": 22.008,
     "chars": 111,
     "cue_count": 5,
-    "bytes": 136940,
+    "bytes": 134492,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "yue",
@@ -55,13 +55,13 @@
     "path": "audio/yue/B04.mp3",
     "srt": "audio/yue/B04.srt",
     "vtt": "audio/yue/B04.vtt",
-    "duration_s": 22.248,
+    "duration_s": 22.056,
     "chars": 84,
     "cue_count": 4,
-    "bytes": 127004,
+    "bytes": 126356,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 2,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "yue",
@@ -71,13 +71,13 @@
     "path": "audio/yue/B05.mp3",
     "srt": "audio/yue/B05.srt",
     "vtt": "audio/yue/B05.vtt",
-    "duration_s": 48.144,
+    "duration_s": 47.664,
     "chars": 139,
     "cue_count": 6,
-    "bytes": 205844,
+    "bytes": 205364,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 10,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "yue",
@@ -87,13 +87,13 @@
     "path": "audio/yue/B06.mp3",
     "srt": "audio/yue/B06.srt",
     "vtt": "audio/yue/B06.vtt",
-    "duration_s": 22.032,
+    "duration_s": 21.624,
     "chars": 102,
     "cue_count": 5,
-    "bytes": 117596,
+    "bytes": 117860,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 4,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "yue",
@@ -103,13 +103,13 @@
     "path": "audio/yue/B07.mp3",
     "srt": "audio/yue/B07.srt",
     "vtt": "audio/yue/B07.vtt",
-    "duration_s": 16.656,
+    "duration_s": 16.464,
     "chars": 54,
     "cue_count": 4,
-    "bytes": 82988,
+    "bytes": 83324,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 2,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "yue",
@@ -119,13 +119,15 @@
     "path": "audio/yue/B08.mp3",
     "srt": "audio/yue/B08.srt",
     "vtt": "audio/yue/B08.vtt",
-    "duration_s": 16.2,
+    "duration_s": 16.248,
     "chars": 80,
     "cue_count": 4,
-    "bytes": 97200,
+    "bytes": 97488,
     "method": "plain",
     "en_spans": 0,
-    "pad_s": 0
+    "pad_s": 0,
+    "yue_zing3": 3,
+    "yue_zing3_method": "tts_homophone_政"
   },
   {
     "lang": "yue",
@@ -135,13 +137,15 @@
     "path": "audio/yue/B09.mp3",
     "srt": "audio/yue/B09.srt",
     "vtt": "audio/yue/B09.vtt",
-    "duration_s": 17.376,
+    "duration_s": 17.28,
     "chars": 90,
     "cue_count": 5,
-    "bytes": 106100,
+    "bytes": 105788,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05,
+    "yue_zing3": 2,
+    "yue_zing3_method": "tts_homophone_政"
   },
   {
     "lang": "yue",
@@ -151,13 +155,15 @@
     "path": "audio/yue/B10.mp3",
     "srt": "audio/yue/B10.srt",
     "vtt": "audio/yue/B10.vtt",
-    "duration_s": 22.224,
+    "duration_s": 22.152,
     "chars": 117,
     "cue_count": 5,
-    "bytes": 144548,
+    "bytes": 144020,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05,
+    "yue_zing3": 1,
+    "yue_zing3_method": "tts_homophone_政"
   },
   {
     "lang": "yue",
@@ -167,13 +173,15 @@
     "path": "audio/yue/B11.mp3",
     "srt": "audio/yue/B11.srt",
     "vtt": "audio/yue/B11.vtt",
-    "duration_s": 20.88,
+    "duration_s": 20.76,
     "chars": 105,
     "cue_count": 4,
-    "bytes": 131612,
+    "bytes": 130388,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05,
+    "yue_zing3": 4,
+    "yue_zing3_method": "tts_homophone_政"
   },
   {
     "lang": "yue",
@@ -183,13 +191,13 @@
     "path": "audio/yue/B12.mp3",
     "srt": "audio/yue/B12.srt",
     "vtt": "audio/yue/B12.vtt",
-    "duration_s": 16.512,
+    "duration_s": 16.416,
     "chars": 77,
     "cue_count": 4,
-    "bytes": 104252,
+    "bytes": 105116,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "yue",
@@ -199,13 +207,13 @@
     "path": "audio/yue/B13.mp3",
     "srt": "audio/yue/B13.srt",
     "vtt": "audio/yue/B13.vtt",
-    "duration_s": 45.648,
+    "duration_s": 44.856,
     "chars": 149,
     "cue_count": 5,
-    "bytes": 233300,
+    "bytes": 231812,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 8,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "yue",
@@ -215,13 +223,13 @@
     "path": "audio/yue/B14.mp3",
     "srt": "audio/yue/B14.srt",
     "vtt": "audio/yue/B14.vtt",
-    "duration_s": 29.976,
+    "duration_s": 29.472,
     "chars": 110,
     "cue_count": 4,
-    "bytes": 157124,
+    "bytes": 155900,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 5,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "yue",
@@ -231,13 +239,13 @@
     "path": "audio/yue/B15.mp3",
     "srt": "audio/yue/B15.srt",
     "vtt": "audio/yue/B15.vtt",
-    "duration_s": 26.76,
+    "duration_s": 26.352,
     "chars": 108,
     "cue_count": 5,
-    "bytes": 143612,
+    "bytes": 143036,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 4,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -247,13 +255,13 @@
     "path": "audio/cmn/B01.mp3",
     "srt": "audio/cmn/B01.srt",
     "vtt": "audio/cmn/B01.vtt",
-    "duration_s": 10.68,
+    "duration_s": 10.584,
     "chars": 58,
     "cue_count": 3,
-    "bytes": 65012,
+    "bytes": 64844,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -263,10 +271,10 @@
     "path": "audio/cmn/B02.mp3",
     "srt": "audio/cmn/B02.srt",
     "vtt": "audio/cmn/B02.vtt",
-    "duration_s": 9.96,
+    "duration_s": 10.056,
     "chars": 45,
     "cue_count": 5,
-    "bytes": 59760,
+    "bytes": 60336,
     "method": "plain",
     "en_spans": 0,
     "pad_s": 0
@@ -279,13 +287,13 @@
     "path": "audio/cmn/B03.mp3",
     "srt": "audio/cmn/B03.srt",
     "vtt": "audio/cmn/B03.vtt",
-    "duration_s": 21.24,
+    "duration_s": 21.144,
     "chars": 112,
     "cue_count": 5,
-    "bytes": 137732,
+    "bytes": 136508,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -295,13 +303,13 @@
     "path": "audio/cmn/B04.mp3",
     "srt": "audio/cmn/B04.srt",
     "vtt": "audio/cmn/B04.vtt",
-    "duration_s": 21.624,
+    "duration_s": 21.72,
     "chars": 84,
     "cue_count": 4,
-    "bytes": 119756,
+    "bytes": 121292,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 2,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -311,13 +319,13 @@
     "path": "audio/cmn/B05.mp3",
     "srt": "audio/cmn/B05.srt",
     "vtt": "audio/cmn/B05.vtt",
-    "duration_s": 46.32,
+    "duration_s": 45.384,
     "chars": 139,
     "cue_count": 6,
-    "bytes": 188468,
+    "bytes": 190724,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 10,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -327,13 +335,13 @@
     "path": "audio/cmn/B06.mp3",
     "srt": "audio/cmn/B06.srt",
     "vtt": "audio/cmn/B06.vtt",
-    "duration_s": 21.12,
+    "duration_s": 20.736,
     "chars": 102,
     "cue_count": 5,
-    "bytes": 104852,
+    "bytes": 106484,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 4,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -343,13 +351,13 @@
     "path": "audio/cmn/B07.mp3",
     "srt": "audio/cmn/B07.srt",
     "vtt": "audio/cmn/B07.vtt",
-    "duration_s": 15.72,
+    "duration_s": 15.528,
     "chars": 55,
     "cue_count": 4,
-    "bytes": 79988,
+    "bytes": 78884,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 2,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -359,10 +367,10 @@
     "path": "audio/cmn/B08.mp3",
     "srt": "audio/cmn/B08.srt",
     "vtt": "audio/cmn/B08.vtt",
-    "duration_s": 15.816,
+    "duration_s": 15.744,
     "chars": 80,
     "cue_count": 4,
-    "bytes": 94896,
+    "bytes": 94464,
     "method": "plain",
     "en_spans": 0,
     "pad_s": 0
@@ -375,13 +383,13 @@
     "path": "audio/cmn/B09.mp3",
     "srt": "audio/cmn/B09.srt",
     "vtt": "audio/cmn/B09.vtt",
-    "duration_s": 16.728,
+    "duration_s": 16.632,
     "chars": 90,
     "cue_count": 5,
-    "bytes": 102932,
+    "bytes": 102260,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -391,13 +399,13 @@
     "path": "audio/cmn/B10.mp3",
     "srt": "audio/cmn/B10.srt",
     "vtt": "audio/cmn/B10.vtt",
-    "duration_s": 21.312,
+    "duration_s": 21.216,
     "chars": 117,
     "cue_count": 5,
-    "bytes": 134804,
+    "bytes": 137084,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -407,13 +415,13 @@
     "path": "audio/cmn/B11.mp3",
     "srt": "audio/cmn/B11.srt",
     "vtt": "audio/cmn/B11.vtt",
-    "duration_s": 20.4,
+    "duration_s": 20.064,
     "chars": 105,
     "cue_count": 4,
-    "bytes": 131420,
+    "bytes": 128636,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -423,13 +431,13 @@
     "path": "audio/cmn/B12.mp3",
     "srt": "audio/cmn/B12.srt",
     "vtt": "audio/cmn/B12.vtt",
-    "duration_s": 16.08,
+    "duration_s": 15.984,
     "chars": 77,
     "cue_count": 4,
-    "bytes": 99356,
+    "bytes": 98012,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 1,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -439,13 +447,13 @@
     "path": "audio/cmn/B13.mp3",
     "srt": "audio/cmn/B13.srt",
     "vtt": "audio/cmn/B13.vtt",
-    "duration_s": 44.808,
+    "duration_s": 44.016,
     "chars": 149,
     "cue_count": 5,
-    "bytes": 213116,
+    "bytes": 208820,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 8,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -455,13 +463,13 @@
     "path": "audio/cmn/B14.mp3",
     "srt": "audio/cmn/B14.srt",
     "vtt": "audio/cmn/B14.vtt",
-    "duration_s": 28.68,
+    "duration_s": 28.176,
     "chars": 110,
     "cue_count": 4,
-    "bytes": 145172,
+    "bytes": 143132,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 5,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "cmn",
@@ -471,13 +479,13 @@
     "path": "audio/cmn/B15.mp3",
     "srt": "audio/cmn/B15.srt",
     "vtt": "audio/cmn/B15.vtt",
-    "duration_s": 25.944,
+    "duration_s": 25.032,
     "chars": 108,
     "cue_count": 5,
-    "bytes": 136628,
+    "bytes": 134612,
     "method": "ffmpeg_pad_per_en_span",
     "en_spans": 4,
-    "pad_s": 0.1
+    "pad_s": 0.05
   },
   {
     "lang": "en",

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 — 2026-10-22
+
+- 只重接第3章 TTS。15 節，`ch3/js/beats.js` 的 `duration_s` 合計 **363.1 秒**（先前 366.0 秒）。
+- 粵語／普通話英文片段前後 EN pad 改為 **0.05 秒**（先前 0.1 秒）。English 聲線沒有 EN pad。
+- 粵語理科「正」以 zing3 合成；字幕（VTT／SRT）仍寫「正」。
+- 以新 pack 的 `B01.mp3`–`B15.mp3` 及同名 `.vtt`／`.srt` 取代 `ch3/audio/{yue,cmn,en}/`，並依各節 VTT 重寫 `ch3/js/cues.js`（含 `CH4_AUDIO_DURATIONS`）。
+- 去掉過期的整軌 `ch3/audio/{yue,cmn,en}.vtt`／`.srt`。播放器讀的是逐節字幕。
+- `CH4_BEATS`／`CH4_CUES`／`CH4_AUDIO_DURATIONS`、`scenes.js`、播放器外殼，以及 `ch3-player-sub-size`／`ch3-ui-collapse-dock` 維持不變。Ch1、Ch2 未改。
+
 ## 0.2.0 — 2026-10-22
 
 - 接上已核准的 Ch1–Ch3 TTS。每章 15 節：Ch1 205.9 秒、Ch2 272.0 秒、Ch3 366.0 秒（`js/beats.js` 的 `duration_s` 合計）。
